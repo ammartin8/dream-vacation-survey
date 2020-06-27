@@ -4,99 +4,105 @@
 
 <head>
     <title>🌅 Dream Vacation Survey</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <header>
     <h1 id="title">Dream Vacation Survey</h1>
-</header>
-
-<body>
     <p id="description">Do you love to travel? Fill out our Dream Vacation Survey for a chance to
         win a dream vacation of your choice and plus learn ways you can save!
     </p>
-    <form id="survey-form">
-        <div>
-            <label>Where would you love to travel to dream vacation?</label>
-            <input type="text" value="" placeholder="Enter City"> <input type="text" value=""
-                placeholder="Enter Country">
-        </div>
-        <div>
-            <label>Why do you want to travel to [City/Country]?</label>
-            <input type="textarea" value="" placeholder="What's Your Reason">
-        </div>
-        <div>
-            <label>Who would you travel with? (Check all that apply)</label>
-            <input type="checkbox" value="">Family
-            <input type="checkbox" value="">Friends
-            <input type="checkbox" value="">Solo
-            <input type="checkbox" value="">Other: <input type="text" placeholder="Specify Other">
-        </div>
-        <div>
-            <label>How many days would you stay for your dream vacation?</label>
-            <select>
-                <option>Choose an Option</option>
-                <option>Less than 5 Days</option>
-                <option>5 to 10 Days</option>
-                <option>11 to 15 Days</option>
-                <option>16 to 20 Days</option>
-                <option>21 to 25 Days</option>
-                <option>26 to 30 Days</option>
-                <option>2 Months</option>
-                <option>3+ Months</option>
-            </select>
-        </div>
-        <div>
-            <label>What would you do during your dream vacation?</label>
-            <input type="checkbox">Sightseeing/Tours
-            <input type="checkbox">Outdoor Activities
-            <input type="checkbox">Concerts & Shows
-            <input type="checkbox">Main Attractions
-            <input type="checkbox">Shopping
-            <input type="checkbox">Visit Museums
-            <input type="checkbox">Go Theme Parks
-            <input type="checkbox">Go to Local Restaurants
-            <input type="checkbox">Other <input type="text" placeholder="Specify Other">
-        </div>
-        <div>
-            <label>When planning a trip you prefer to:</label>
-            <input type="radio">Plan the arrangements yourself
-            <input type="radio">Use a travel agent
-            <input type="radio">Purchase a vacation package
-            <input type="radio">It depends! Whichever get's me the better deal.
-        </div>
-        <div>
-            <label>Let's say you have saved enough money to go on your dream vacation. How soon would you go?</label>
-            <select>
-                <option>Choose an Option</option>
-                <option>Within the month</option>
-                <option>Next month</option>
-                <option>2 - 3 months from now</option>
-                <option>4 - 5 months from now</option>
-                <option>6 - 7 months from now</option>
-                <option>8 - 9 months from now</option>
-                <option>10 - 11 months from now<< /option>
-                <option>12+ months from now</option>
-            </select>
-        </div>
-        <div>
-            <label>When you plan for travel, do you search online for deals to save on cost?</label>
-            <select>
-                <option>Choose an Option</option>
-                <option>Nah, not really.</option>
-                <option>Sometimes, if I know where to look.</option>
-                <option>Yes! I always look to save money if I can!</option>
-            </select>
-        </div>
-        <div>
-            <p>Thanks so much for taking our survey! Please feel out your contact info below for a chance to win a dream
-                vacation!
-                Plus be added on our emailing list to learn the best tips and
-                tricks to save even more on all your future vacations! Woohoo!
-            </p>
-            <input type="text" placeholder="Enter Your Full Name" id="name" required>
-            <input type="email" placeholder="Please enter your email address" id="email" required>
-        </div>
-    </form>
+</header>
+
+<body>
+    <img src="images/background_image.jpg" id="background-image">
+    <div class="main-container">
+        <form id="survey-form">
+            <div class="section section1">
+                <label>Where would you love to travel to dream vacation?</label><br />
+                <input type="text" value="" placeholder="Enter City"> <input type="text" value=""
+                    placeholder="Enter Country">
+            </div>
+            <div class="section section2">
+                <label>Why do you want to travel to [City/Country]?</label><br />
+                <input type="textarea" rows="6" cols="40" wrap="hard" placeholder="What's Your Reason" class="travel-desc">
+            </div>
+            <div class="section section3">
+                <label>Who would you travel with? (Check all that apply)</label><br />
+                <input type="checkbox" value="">Family
+                <input type="checkbox" value="">Friends
+                <input type="checkbox" value="">Solo
+                <input type="checkbox" value="">Other: <input type="text" placeholder="Specify Other">
+            </div>
+            <div class="section section4">
+                <label>How many days would you stay for your dream vacation?</label><br />
+                <select>
+                    <option>Choose an Option</option>
+                    <option>Less than 5 Days</option>
+                    <option>5 to 10 Days</option>
+                    <option>11 to 15 Days</option>
+                    <option>16 to 20 Days</option>
+                    <option>21 to 25 Days</option>
+                    <option>26 to 30 Days</option>
+                    <option>2 Months</option>
+                    <option>3+ Months</option>
+                </select>
+            </div>
+            <div class="section section5">
+                <label>What would you do during your dream vacation?</label><br />
+                <input type="checkbox">Sightseeing/Tours
+                <input type="checkbox">Outdoor Activities
+                <input type="checkbox">Concerts & Shows
+                <input type="checkbox">Main Attractions
+                <input type="checkbox">Shopping
+                <input type="checkbox">Visit Museums
+                <input type="checkbox">Go Theme Parks
+                <input type="checkbox">Go to Local Restaurants<br />
+                <input type="checkbox">Other <input type="text" placeholder="Specify Other">
+            </div>
+            <div class="section section6">
+                <label>When planning a trip you prefer to:</label><br />
+                <input type="radio">Plan the arrangements yourself
+                <input type="radio">Use a travel agent
+                <input type="radio">Purchase a vacation package
+                <input type="radio">It depends! Whichever get's me the better deal.
+            </div>
+            <div class="section section7">
+                <label>Let's say you have saved enough money to go on your dream vacation. How soon would you
+                    go?</label><br />
+                <select>
+                    <option>Choose an Option</option>
+                    <option>Within the month</option>
+                    <option>Next month</option>
+                    <option>2 - 3 months from now</option>
+                    <option>4 - 5 months from now</option>
+                    <option>6 - 7 months from now</option>
+                    <option>8 - 9 months from now</option>
+                    <option>10 - 11 months from now<< /option>
+                    <option>12+ months from now</option>
+                </select>
+            </div>
+            <div class="section section8">
+                <label>When you plan for travel, do you search online for deals to save on cost?</label><br />
+                <select>
+                    <option>Choose an Option</option>
+                    <option>Nah, not really.</option>
+                    <option>Sometimes, if I know where to look.</option>
+                    <option>Yes! I always look to save money whenever I can!</option>
+                </select>
+            </div>
+            <div class="section section9"><br />
+                <p>Thanks so much for taking our survey! Please feel out your contact info below for a chance to win a
+                    dream
+                    vacation!
+                    Plus be added on our emailing list to learn the best tips and
+                    tricks to save even more on all your future vacations! Woohoo!
+                </p>
+                <input type="text" placeholder="Enter Your Full Name" id="name" required>
+                <input type="email" placeholder="Please enter your email address" id="email" required>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
