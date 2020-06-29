@@ -18,31 +18,49 @@
     <!-- <img src="images/background_image.jpg" id="background-image"> -->
     <div class="main-container">
         <form id="survey-form">
-            <div class="section section1">
+            <div class="section">
                 <label>Where would you love to travel to for your dream vacation?</label><br />
+                <hr>
                 <input type="text" value="" placeholder="Enter City"> <input type="text" value=""
                     placeholder="Enter Country">
             </div>
-            <div class="section section2">
-                <label>Why do you want to travel to [City/Country]?</label><br />
-                <input type="textarea" rows="6" cols="40" wrap="hard" placeholder="Type your reason here" class="travel-desc">
+            <div class="section">
+                <label>Why do you want to travel to [City/Country]?</label>
+                <br />
+                <hr>
+                <textarea rows="6" cols="40" wrap="hard" placeholder="Type your reason here"
+                    class="travel-desc"></textarea>
             </div>
-            <div class="section section3">
+            <div class="section">
                 <label>Who would you travel with? (Check all that apply)</label><br />
-                <input type="checkbox" name="travel-with" value="travel-family">
-                <label>Family</label>
-                <input type="checkbox" name="travel-with" value="travel-friends">
-                <label>Friends</label>
-                <input type="checkbox" name="travel-with" value="travel-solo">
-                <label>Solo</label>
-                <input type="checkbox" name="travel-with" value="travel-partner">
-                <label>Significant other or partner</label>
-                <input type="checkbox" name="travel-with" value="travel-other">
-                <label>Other: </label>
-                <input type="text" placeholder="Specify Other">
+                <hr>
+                <div>
+                    <input type="checkbox" name="travel-with" value="travel-family">
+                    <label>Family</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-with" value="travel-friends">
+                    <label>Friends</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-with" value="travel-solo">
+                    <label>Solo</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-with" value="travel-partner">
+                    <label>Significant other or partner</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-with" value="travel-other">
+                    <label>Other: </label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Specify Other">
+                </div>
             </div>
-            <div class="section section4">
+            <div class="section">
                 <label>How many days would you stay for your dream vacation?</label><br />
+                <hr>
                 <select id="dropdown">
                     <option>Choose an Option</option>
                     <option>Less than 5 Days</option>
@@ -55,31 +73,77 @@
                     <option>3+ Months</option>
                 </select>
             </div>
-            <div class="section section5">
+            <div id="activity-section" class="section">
                 <label>What would you do during your dream vacation?</label><br />
-                <input type="checkbox" name="travel-activities" value="activity-tour">Sightseeing/Tours
-                <input type="checkbox" name="travel-activities" value="activity-outdoor">Outdoor Activities
-                <input type="checkbox" name="travel-activities" value="activity-concert">Concerts & Shows
-                <input type="checkbox" name="travel-activities" value="activity-shop">Shopping
-                <input type="checkbox" name="travel-activities" value="activity-museum">Visit Museums
-                <input type="checkbox" name="travel-activities" value="activity-themepark">Go Theme Parks
-                <input type="checkbox" name="travel-activities" value="activity-restaurant">Go to Local Restaurants<br />
-                <input type="checkbox" name="travel-activities" value="activity-other">Other <input type="text" placeholder="Specify Other">
-            </div>
-            <div class="section section6">
-                <label>When planning a trip you prefer to:</label><br />
-                <input type="radio" name="travel-arrangements">Plan the arrangements yourself
-                <input type="radio" name="travel-arrangements">Use a travel agent
-                <input type="radio" name="travel-arrangements">Purchase a vacation package
-                <input type="radio" name="travel-arrangements">It depends! Whichever get's me the better deal.
+                <hr>
+                <div>
+                    <input type="checkbox" name="travel-activities" value="activity-tour">
+                    <label>Sightseeing/Tours</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-activities" value="activity-outdoor">
+                    <label>Outdoor Activities</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-activities" value="activity-concert">
+                    <label>Concerts & Shows</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-activities" value="activity-shop">
+                    <label>Shopping</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-activities" value="activity-museum">
+                    <label>Visit Museums</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-activities" value="activity-themepark">
+                    <label>Go Theme Parks</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-activities" value="activity-restaurant">
+                    <label>Go to Local Restaurants</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="travel-activities" value="activity-other">
+                    <label>Other: </label>
+                    <input type="text" name="travel-activities" placeholder="Specify Other">
+                </div>
             </div>
             <div class="section">
-                <label id="number-label">How much would you be wiling to spend on your dream vacation? (Enter a number between 1 and 999,999)</label>
+                <label>When planning a trip you prefer to:</label><br />
+                <hr>
+                <div>
+                    <input type="radio" name="travel-arrangements">
+                    <label>Plan the arrangements yourself</label>
+                </div>
+                <div>
+                    <input type="radio" name="travel-arrangements">
+                    <label>Use a travel agent</label>
+                </div>
+                <div>
+                    <input type="radio" name="travel-arrangements">
+                    <label>Purchase a vacation package</label>
+                </div>
+                <div>
+                    <input type="radio" name="travel-arrangements">
+                    <label>It depends! Whichever get's me the better deal.</label>
+                </div>
+            </div>
+            <div class="section">
+                <label id="number-label">How much would you be wiling to spend on your dream vacation? (Enter a
+                    number between 1 and 999,999)
+                </label>
+                <br />
+                <hr>
                 $ <input type="number" id="number" min="1" max="999999" placeholder="Enter a number">
             </div>
-            <div class="section section7">
+            <div class="section">
                 <label>Let's say you have saved enough money to go on your dream vacation. How soon would you
-                    go?</label><br />
+                    go?
+                </label>
+                <br />
+                <hr>
                 <select id="dropdown-2">
                     <option>Choose an Option</option>
                     <option>Within the month</option>
@@ -92,17 +156,18 @@
                     <option>12+ months from now</option>
                 </select>
             </div>
-            <div id="dropdown-3" class="section section8">
+            <div class="section">
                 <label>When you plan for travel, do you search online for deals to save on cost?</label><br />
-                <select>
-                    <option>Choose an Option</option>
-                    <option>Nah, not really.</option>
-                    <option>Sometimes, if I know where to look.</option>
-                    <option>Yes! I always look to save money whenever I can!</option>
-                </select>
+                <hr>
+                <div><input type="radio" name="deal-preference"><label> Nah, not really.</label></div>
+                <div><input type="radio" name="deal-preference"><label> Sometimes, if I know where to look.</label></div>
+                <div><input type="radio" name="deal-preference"><label> Yes! I always look to save money whenever I
+                        can!</label></div>
             </div>
-            <div class="section section9"><br />
-                <p>Thanks so much for taking our survey! Please feel out your contact info below for a chance to win a
+            <div class="section"><br />
+                <p>
+                    Thanks so much for taking our survey! Please feel out your contact info below for a chance to win
+                    a
                     dream
                     vacation!
                     Plus be added on our emailing list to learn the best tips and
@@ -114,10 +179,12 @@
                 <input type="email" placeholder="Please enter your email address" id="email" required>
             </div>
             <div id="comment-section" class="section">
-                <label>Comments or Questions?</label><br />
-                <input type="textarea" rows="5" cols="50" placeholder="Type your comments or questions here">
+                <label>Comments or Questions?</lbel>
+                <hr>
+                <br />
+                <textarea rows="6"  wrap="hard" placeholder="Type your comments or questions here"></textarea>
             </div>
-            <div><button type="submit" id="submit">Submit</button></div>
+            <button type="submit" id="submit">Submit</button>
         </form>
     </div>
 </body>
