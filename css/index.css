@@ -36,7 +36,6 @@ hr {
     min-height: 100vh;
     max-width: 100%;
     object-fit: cover;
-    /* opacity: 30%; */
 }
 
 #background-container {
@@ -50,23 +49,43 @@ hr {
     width: 100%;
 }
 
-
-/*Header section*/
-
-
 /*Survey Form Section*/
+/*Survey Header Section*/
+.survey-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.survey-title-desc{
+    position: relative;
+    margin-top: -10em;
+    padding: 1.5em;
+    z-index: 2;
+}
+
+.custom-shape-divider-top {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.custom-shape-divider-top svg {
+    position: relative;
+    width: calc(137% + 1.3px);
+    height: 200px;
+}
 
 
 #survey-form {
     display: flex;
     flex-direction: column;
-    /* width: 300px; */
     max-width: 500px;
     height: auto;
-    padding: 1em;
     border-radius: 5px 5px;
     background-color: rgb(255, 255, 255);
-
     box-shadow: darkslategray 5px 10px 10px 5px;
     margin: 5em auto;
 }
@@ -79,24 +98,6 @@ hr {
     color: #000;
 }
 
-/* #survey-form > div:nth-child(1), #survey-form > div:nth-child(7), #survey-form > div:nth-child(11) {
-    background: linear-gradient(180deg, rgba(26, 2, 46), rgba(70, 13, 117), rgba(124, 46, 189));
-}
-
-
-#survey-form > div:nth-child(2n+0) {
-    background: linear-gradient(180deg, rgb(194, 55, 0), rgba(255, 104, 44), rgba(255, 136, 89));
-}
-
-#survey-form > div:nth-child(3n+0) {
-    background: linear-gradient(180deg, rgb(0, 59, 0), rgba(43, 150, 43), rgba(78, 177, 78));
-}
-
-#survey-form > div:nth-child(5n+0) {
-    background: linear-gradient(180deg, rgb(93, 2, 53), rgba(151, 43, 104), rgba(177, 78, 134));
-} */
-
-
 
 input[type=text],
 input[type=email],
@@ -106,13 +107,6 @@ input[type=number] {
     max-width: 18em;
     border-radius: 5px 5px;
 }
-
-/* input[type="textarea"] {
-    width: 100%;
-    max-width: 50vw;
-    height: 10em;
-    border-radius: 5px 5px;
-} */
 
 textarea {
     width: 100%;
@@ -130,6 +124,7 @@ textarea {
 /*Thank you Section Styling*/
 #thank-you-section > p {
     text-align: center;
+    margin: 0;
 }
 
 /*Submit Button Styling*/
@@ -148,5 +143,12 @@ textarea {
 @media (max-width: 680px) {
     #survey-form {
         max-width: 275px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1593552468 svg {
+        width: calc(160% + 1.3px);
+        height: 200px;
     }
 }
