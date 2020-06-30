@@ -7,32 +7,33 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
         rel="stylesheet">
+    <!-- import the webpage's javascript file -->
+    <script src="js/script.js" defer></script>
 </head>
 
-
-
 <body>
-
     <div id="background-containter"><img src="images/tropical_beach.jpg" id="background-image"></div>
     <div class="main-container">
         <form id="survey-form">
             <header class="survey-header">
                 <div class="custom-shape-divider-top">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
                         <defs>
                             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                              <stop offset="0%" style="stop-color:rgb(255, 123, 0);stop-opacity:1" />
-                              <stop offset="50%" style="stop-color:rgb(207, 54, 238);stop-opacity:1" />
-                              <stop offset="100%" style="stop-color:rgb(241, 94, 205);stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:rgb(255, 123, 0);stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:rgb(207, 54, 238);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(241, 94, 205);stop-opacity:1" />
                             </linearGradient>
-                          </defs>
-                        <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill" fill="url(#grad1)"></path>
+                        </defs>
+                        <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
+                            class="shape-fill" fill="url(#grad1)"></path>
                     </svg>
                 </div>
                 <div class="survey-title-desc">
                     <h1 id="title">Dream Vacation Survey</h1>
-                    <p id="description">Do you love to travel? Fill out our Dream Vacation Survey for a chance to
-                        win a dream vacation of your choice and plus get tips on ways you can save more on future
+                    <p id="description">Do you love to travel? Fill out our quick survey for a chance to
+                        win a FREE dream vacation and plus get tips on ways you can save more on ALL future
                         vacations!
                     </p>
                 </div>
@@ -51,7 +52,7 @@
                 </div>
             </div>
             <div class="section">
-                <label>What's gets you excited about vacationing at this destination?</label>
+                <label>What gets you excited about vacationing at this destination?</label>
                 <br />
                 <hr>
                 <textarea rows="6" cols="40" wrap="hard" placeholder="Type your reason here"
@@ -85,7 +86,7 @@
                 </div>
             </div>
             <div class="section">
-                <label>How many days would you stay for your dream vacation?</label><br />
+                <label>How many days would you stay during your dream vacation?</label><br />
                 <hr>
                 <select id="dropdown">
                     <option>Choose an Option</option>
@@ -100,7 +101,7 @@
                 </select>
             </div>
             <div id="activity-section" class="section">
-                <label>What would you do during your dream vacation?</label><br />
+                <label>What would you plan to do?</label><br />
                 <hr>
                 <div>
                     <input type="checkbox" name="travel-activities" value="activity-tour">
@@ -124,7 +125,7 @@
                 </div>
                 <div>
                     <input type="checkbox" name="travel-activities" value="activity-themepark">
-                    <label>Go Theme Parks</label>
+                    <label>Go Theme Parks / Main Attractions</label>
                 </div>
                 <div>
                     <input type="checkbox" name="travel-activities" value="activity-restaurant">
@@ -140,60 +141,62 @@
                 <label>When planning a trip you prefer to:</label><br />
                 <hr>
                 <div>
-                    <input type="radio" name="travel-arrangements">
+                    <input type="radio" name="travel-arrangements" value="arrange-self">
                     <label>Plan the arrangements yourself</label>
                 </div>
                 <div>
-                    <input type="radio" name="travel-arrangements">
+                    <input type="radio" name="travel-arrangements" value="arrange-agent">
                     <label>Use a travel agent</label>
                 </div>
                 <div>
-                    <input type="radio" name="travel-arrangements">
+                    <input type="radio" name="travel-arrangements" value="arrange-package">
                     <label>Purchase a vacation package</label>
                 </div>
                 <div>
-                    <input type="radio" name="travel-arrangements">
-                    <label>It depends! Whichever get's me the better deal.</label>
+                    <input type="radio" name="travel-arrangements" value="arrange-depends">
+                    <label>It depends. Whichever get's me the better deal.</label>
                 </div>
             </div>
             <div class="section">
-                <label id="number-label">How much would you be wiling to spend on your dream vacation? (Enter a
-                    number between 1 and 999,999)
+                <label id="number-label">How much would you be willing to spend on your vacation including travel, stay,
+                    meals, gifts, etc.? (Enter a
+                    number between $1 and $20,000)
                 </label>
                 <br />
                 <hr>
-                $ <input type="number" id="number" min="1" max="999999" placeholder="Enter a number">
+                $ <input type="number" id="number" min="1" max="20000" placeholder="Enter a number">
             </div>
             <div class="section">
-                <label>Let's say you have saved enough money to go on your dream vacation. How soon would you
-                    go?
+                <label>How far in advance do you typically plan your vacations?
                 </label>
                 <br />
                 <hr>
                 <select id="dropdown-2">
                     <option>Choose an Option</option>
-                    <option>Within the month</option>
+                    <option>Within the same month</option>
                     <option>Next month</option>
                     <option>2 - 3 months from now</option>
                     <option>4 - 5 months from now</option>
                     <option>6 - 7 months from now</option>
                     <option>8 - 9 months from now</option>
-                    <option>10 - 11 months from now<< /option>
+                    <option>10 - 11 months from now</option>
                     <option>12+ months from now</option>
                 </select>
             </div>
             <div class="section">
                 <label>When you plan for travel, do you search online for deals to save on cost?</label><br />
                 <hr>
-                <div><input type="radio" name="deal-preference"><label> Nah, not really.</label></div>
-                <div><input type="radio" name="deal-preference"><label> Sometimes, if I know where to look.</label>
+                <div><input type="radio" name="deal-preference" value="deal-nope"><label> Nah, not really.</label></div>
+                <div><input type="radio" name="deal-preference" value="deal-sometimes"><label> Sometimes, if I know where to look.</label>
                 </div>
-                <div><input type="radio" name="deal-preference"><label> Yes! I always look to save money whenever I
+                <div><input type="radio" name="deal-preference" value="deal-always"><label> Yes! I always look to save money whenever I
                         can!</label></div>
             </div>
             <div id="thank-you-section" class="section"><br />
                 <p>
-                    Thanks so much for taking our survey! Please feel out your contact info below for a chance to win
+                    Thank you for taking our survey! <br />
+                    Please feel out your contact info below for a chance to
+                    win
                     a
                     dream
                     vacation!
@@ -214,6 +217,7 @@
             <button type="submit" id="submit">Submit</button>
         </form>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
